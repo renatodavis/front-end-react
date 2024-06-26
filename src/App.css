@@ -1,0 +1,6 @@
+/* styles.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas com largura igual */
+  gap: 1rem; /* Espaçamento entre os itens da grid */
+}
