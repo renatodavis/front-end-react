@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DataTable from '../../components/DataTable';
+import MainContent from '../../components/MainContent';
 import { Label } from '../../components/ui/label';
 import { api } from '../../services/api';
 
@@ -14,7 +15,7 @@ const Clientes: React.FC = () => {
                 const response = await api.get("http://localhost:8080/api/pessoas");
                 setData(response.data);
             } catch (error) {
-                console.error("Error fetching data", error);
+                console.error("Error ao buscar os dados de clientes", error);
             } finally {
                 setLoading(false);
             }
@@ -36,8 +37,10 @@ const Clientes: React.FC = () => {
 
     return (
         <>
+            <MainContent>
             <Label>Consulta de clientes</Label>
             <DataTable data={data} columns={colunas} />
+            </MainContent>
         </>
     );
 };
