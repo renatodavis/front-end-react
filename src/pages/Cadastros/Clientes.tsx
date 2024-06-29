@@ -5,7 +5,6 @@ import { Label } from '../../components/ui/label';
 import { api } from '../../services/api';
 
 const Clientes: React.FC = () => {
-
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -25,10 +24,10 @@ const Clientes: React.FC = () => {
     }, []);
 
     const colunas = [
-
         { accessorKey: "id", header: "Id" },
         { accessorKey: "nome", header: "Nome" },
-        { accessorKey: "cpf", header: "Cpf" }
+        { accessorKey: "cpf", header: "Cpf" },
+        { accessorKey: "ativo", header: "ativo" }
     ];
 
     if (loading) {
@@ -38,8 +37,8 @@ const Clientes: React.FC = () => {
     return (
         <>
             <MainContent>
-            <Label>Consulta de clientes</Label>
-            <DataTable data={data} columns={colunas} />
+                <Label>Consulta de clientes</Label>
+                <DataTable data={data} columns={colunas} />
             </MainContent>
         </>
     );
