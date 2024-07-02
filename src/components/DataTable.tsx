@@ -47,8 +47,13 @@ const DataTable = <TData, TValue>({ data, columns }: DataTableProps<TData, TValu
         navigate(`/CadastroClientes/edit/${id}`);
     };
 
+    const handleNovoClick = () => {
+        navigate('/clientes/novo')
+    }
+
     return (
         <>
+        
             <div className="flex items-center py-6">
                 <Input
                     placeholder="Filtrar por nome"
@@ -58,6 +63,12 @@ const DataTable = <TData, TValue>({ data, columns }: DataTableProps<TData, TValu
                     }
                     className="max-w-sm"
                 />
+
+
+                <Button
+                    onClick={handleNovoClick}
+                    variant="outline" >Novo</Button>
+
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button variant="outline" className="ml-auto">
@@ -147,7 +158,7 @@ const DataTable = <TData, TValue>({ data, columns }: DataTableProps<TData, TValu
                     onClick={() => table.previousPage()}
                     disabled={!table.getCanPreviousPage()}
                 >
-                    Previous
+                    Anterior
                 </Button>
                 <Button
                     variant="outline"
@@ -155,7 +166,7 @@ const DataTable = <TData, TValue>({ data, columns }: DataTableProps<TData, TValu
                     onClick={() => table.nextPage()}
                     disabled={!table.getCanNextPage()}
                 >
-                    Next
+                    Próximo
                 </Button>
             </div>
         </>

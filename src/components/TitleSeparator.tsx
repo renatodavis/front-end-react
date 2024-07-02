@@ -6,7 +6,7 @@ const TitleSeparator: React.FC = () => {
             <div className="space-y-1">
                 <div className='font-bold text-2xl cursor-pointer flex items-center gap-1 m-4'>
                     <BeakerIcon className='w-7 h-7'></BeakerIcon>
-                    <span >Sistema ERP</span>
+                    <span >Sistema de Cadastros</span>
                 </div>
             </div>                        
         </div>

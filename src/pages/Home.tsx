@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import MainContent from "../components/MainContent";
 
 export default function Home() {
@@ -7,7 +6,7 @@ export default function Home() {
       <MainContent>
         <div>home</div>
       </MainContent>
-      <Footer/>
+      
     </div>
   );
 }

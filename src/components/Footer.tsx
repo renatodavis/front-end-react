@@ -1,13 +1,13 @@
 
-const Footer :React.FC = () => {
+const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="w-full bg-gray-800 text-white py-4 flex justify-center items-center absolute bottom-0">
-        <p>
-            &copy; {currentYear}
-        </p>
-    </footer>
+        <div className="flex flex-col bottom-0">
+            <footer className="bg-gray-800 p-4 w-full text-center text-white">
+                <p>&copy; {currentYear} Renato Davis</p>
+            </footer>
+        </div>
     );
 };
 

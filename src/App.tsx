@@ -6,6 +6,7 @@ import ClientesEdit from './pages/Cadastros/ClientesEdit';
 import HomePage from './pages/Home';
 import SearchPage from './pages/SearchPage';
 
+
 const App: React.FC = () => {
     return (
         <Router>
@@ -13,6 +14,7 @@ const App: React.FC = () => {
                 <Route path="/" element={<SearchPage />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/CadastroClientes" element={<CadastroCliente />} />
+                <Route path="/Clientes/Novo" element={<ClientesEdit />} />
                 <Route path="/CadastroClientes/edit/:id" element={<ClientesEdit />} />
             </Routes>
         </Router>

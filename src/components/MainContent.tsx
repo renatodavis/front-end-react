@@ -7,10 +7,13 @@ interface MainContentProps {
 
 const MainContent: React.FC<MainContentProps> = ({ children }) => {
   return (
-    <main className="flex-1 p-4">
+
+    <main className="flex-1 p-4 ">
       <Header />
       {children}
+      
     </main>
+
   );
 };
 

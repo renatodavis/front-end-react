@@ -17,7 +17,7 @@ const Header: React.FC = () => {
       <div className='md:flex items-center justify-between bg-white py-2 md:px-10 px-7'>
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
           <BeakerIcon className='w-7 h-7'></BeakerIcon>
-          <a href='/' className='font-bold'>Sistema ERP</a>
+          <a href='/' className='font-bold'>Sistema de Cadastros</a>
         </div>
 
         <div onClick={() => setOpen(!open)} className='absolute right-8 top-3 cursor-pointer md:hidden w-7 h-7'>
