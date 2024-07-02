@@ -52,7 +52,7 @@ const SearchPage: React.FC = () => {
                     <Separator className="my-4" />
                 </div>
                 <br/>
-            <Label htmlFor="footer">&copy; 2024 Todos os Direitos Reservados </Label>
+            <Label htmlFor="footer">&copy; 2024 Desenvolvido por Renato Davis </Label>
             <Label htmlFor="footer" className='my-4'> renatodavis@gmail.com </Label>
         
 
